@@ -243,7 +243,7 @@ int main() {
 				for (int i = 0; i < SIZE; i++) {
 					if (adjtable[current->index][i] > -1) {
 						bool newconnection = true;
-						for (set<pathNode*>::iterator it = nodes.begin(); it != nodes.begin(); it++) {
+						for (set<pathNode*>::iterator it = nodes.begin(); it != nodes.end(); it++) {
 							if ((*it)->index == i)
 								newconnection = false;
 						}
